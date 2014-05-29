@@ -11,9 +11,9 @@ for i in all:
     if (num%i == 0):
         factors.append(i)
 
-print factors
+print factors                                    #I get the factors in a list in ascending order
 length = len(factors)        
-print length
+print length                                    #this num has say 16 factors 
 
 
 #numm = []
@@ -21,8 +21,8 @@ print length
 # print numm
 
 
-for j in range(length-1,1):
-    numm = factors[j]
+for j in range(length-1,1):                     #As output I get only factors and length : THe flow never gets here !
+    numm = factors[j]                           #Any clue what am I doing wrong 
     print numm
     for k in range(2,numm-1):
         if (numm%2 == 0):
