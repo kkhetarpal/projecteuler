@@ -15,13 +15,20 @@ print factors
 length = len(factors)        
 print length
 
-for j in range(length,1):
+
+#numm = []
+# numm.append(factors[15])
+# print numm
+
+
+for j in range(length-1,1):
     numm = factors[j]
     print numm
     for k in range(2,numm-1):
         if (numm%2 == 0):
             j = j - 1
         else:
-            print numm   
+            print numm
+        
           
-print time.time() - start
+#print time.time() - start
