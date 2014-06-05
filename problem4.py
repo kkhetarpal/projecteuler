@@ -18,14 +18,17 @@ def palindrome(num):
 i = 999
 j = 999
 check = 0
+largest = 0
 while i >= 99:
     product = 0
+    j = 999
     while j >= 99:
         product = i * j
-        print i,j,product
+        #print i,j,product
         check = palindrome(product)
         if check == 1:
-            print product
-            exit
+            if largest < product:
+                largest = product
+                print largest
         j = j -1
     i = i - 1
