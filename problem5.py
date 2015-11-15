@@ -1,24 +1,23 @@
-#2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+#The sum of the squares of the first ten natural numbers is,
 
-#What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+#12 + 22 + ... + 102 = 385
+#he square of the sum of the first ten natural numbers is,
 
-#Eliminating the divisibility check by removing 1( every integer is evenly divisible by 1)
-#Keeping 20 means we can remove 4,5,2
-##Keeping 18 means we can remove 3,6,9
-#Keeping all primes; 11,13,17,19
-#Keeping 14 means we can remove 7,2
+#(1 + 2 + ... + 10)2 = 552 = 3025
+#Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
+
+#Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
 
-check_list = [11, 13, 14, 16, 17, 18, 19, 20] #Eliminating multiples of these
-def find_solution(step):
-    for num in xrange(step, 999999999, step):
-        if all(num % n == 0 for n in check_list):
-            return num
+
+def find_solution(num):
+    sq = 0
+    for i in range(1, num+1):
+        sum_of_sqaure+ = pow(i,2)
+	sqaure_of_sum = pow((num * (num+1)/2),2)
+
     return None
 
 if __name__ == '__main__':
-    solution = find_solution(20)
-    if solution is None:
-        print "No answer found"
-    else:
-        print "found an answer:", solution
+    solution = find_solution(100)
+    print "found an answer:", solution
